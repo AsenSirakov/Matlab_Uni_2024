@@ -6,7 +6,7 @@ x = C * exp(-a * t);
 plot(t, x);
 xlabel('Time (seconds)');
 ylabel('x(t)');
-title('Plot of a Real Exponential');
+title('Plot of a real exponential');
 grid on;
 
 figure(2)
@@ -17,7 +17,7 @@ x = C * exp(a * t);
 plot(t, x);
 xlabel('Time (seconds)');
 ylabel('x(t)');
-title('Plot of a Real Exponential');
+title('Plot of a real exponential');
 grid on;
 
 figure(3)
@@ -30,12 +30,12 @@ real_part = real(x);
 imag_part = imag(x);
 subplot(2, 1, 1);
 plot(t, real_part);
-title('Real Part of a Complex Signal');
+title('Real part of a complex signal');
 xlabel('Time');
 ylabel('Amplitude');
 subplot(2, 1, 2);
 plot(t, imag_part);
-title('Imaginary Part of a Complex Signal');
+title('Imaginary part of a complex signal');
 xlabel('Time');
 ylabel('Amplitude');
 grid on;
@@ -53,12 +53,12 @@ real_part = real(x);
 imag_part = imag(x);
 subplot(2, 1, 1);
 plot(t, real_part);
-title('Real Part of a Complex Signal');
+title('Real part of a complex signal');
 xlabel('Time');
 ylabel('Amplitude');
 subplot(2, 1, 2);
 plot(t, imag_part);
-title('Imaginary Part of a Complex Signal');
+title('Imaginary part of a complex signal');
 xlabel('Time');
 ylabel('Amplitude');
 grid on;
