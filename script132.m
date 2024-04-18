@@ -1,0 +1,11 @@
+syms x y;
+f = sin(x*y)/(x*y);
+x_values = linspace(-pi, pi, 100);
+y_values = linspace(-pi, pi, 100);
+[x_grid, y_grid] = meshgrid(x_values, y_values);
+z_values = eval(subs(f, {x, y}, {x_grid, y_grid}));
+surf(x_values, y_values, z_values);
+xlabel('x');
+ylabel('y');
+zlabel('f(x, y)');
+title('Графика на f(x, y) = sin(xy)/(xy)');
